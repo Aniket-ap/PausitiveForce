@@ -49,8 +49,8 @@
 
     /* Header */
     header { padding: 8px 0 24px; }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .logo { height: 80px; width: auto; display: block; }
+    .brand { display: flex; align-items: center; justify-content: center; gap: 12px; }
+    .logo { height: 100px; width: auto; display: block; }
 
     /* Site Title (brand name) */
     /* Gazpacho webfont (provide files Gazpacho-Regular.woff2 and Gazpacho-Light.woff2) */
@@ -68,31 +68,31 @@
       font-style: normal;
       font-display: swap;
     }
-    .site-title { margin: 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 44px; line-height: 1; }
+    .site-title { margin: 0; font-weight: 400; font-size: 44px; line-height: 1; }
     .site-title .title-pausitive { color: var(--brand-green); font-weight: 600; }
     .site-title .title-force { color: var(--brand-orange); font-weight: 300; }
-    .site-title .tm { font-family: "Montserrat", sans-serif; font-style: italic; font-weight: 500; font-size: .6em; color: var(--brand-green); margin-left: 2px; vertical-align: super; }
+    .site-title .tm { font-family: "Montserrat", sans-serif; font-style: normal; font-weight: 500; font-size: .6em; color: var(--brand-green); margin-left: 2px; vertical-align: super; }
     
     /* Inline brand styling */
     .brand-inline { white-space: nowrap; }
     .brand-inline .pausitive { color: var(--brand-green); font-weight: 600; }
     .brand-inline .force { color: var(--brand-orange); font-weight: 400; }
-    .brand-inline .tm { font-family: "Montserrat", sans-serif; font-style: italic; font-weight: 500; font-size: .85em; color: var(--brand-green); vertical-align: super; margin-left: 1px; }
+    .brand-inline .tm { font-family: "Montserrat", sans-serif; font-style: normal; font-weight: 500; font-size: .85em; color: var(--brand-green); vertical-align: super; margin-left: 1px; }
 
     /* Hero */
     .hero { padding: 8px 0 12px; }
-    .hero h1 { margin: 12px 0 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 52px; line-height: 1.1; color: var(--brand-green); }
+    .hero h1 { margin: 12px 0 0; font-weight: 400; font-size: 52px; line-height: 1.1; color: var(--brand-green); }
     .hero em { font-style: italic; font-weight: 500; }
     .subline { margin: 8px 0 0; font-family: "Montserrat", sans-serif; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--brand-green); }
 
     /* Sections: minimal with dividers */
     .section { margin: 24px 0 0; padding-top: 20px; border-top: 1px solid var(--divider); }
-    .section h2 { margin: 0 0 10px; font-family: "Gazpacho", serif; font-weight: 300; font-size: 22px; color: var(--brand-green); }
+    .section h2 { margin: 0 0 10px; font-family: "Montserrat", serif; font-weight: 300; font-size: 22px; color: var(--brand-green); font-weight: bold; }
     .section p { margin: 0; line-height: 1.65; }
 
     /* Focus: simple list */
     .focus-list { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
-    .focus-item h3 { margin: 0 0 6px; font-family: "Gazpacho", serif; font-weight: 300; font-size: 20px; color: var(--brand-orange); }
+    .focus-item h3 { margin: 0 0 6px; font-weight: bold; font-family: "Montserrat", serif; font-size: 18px; color: var(--brand-orange); }
     .focus-item p { margin: 0; }
 
     /* Contact */
@@ -114,7 +114,7 @@
       .focus-list { grid-template-columns: 1fr; }
       .contact { grid-template-columns: 1fr; }
       .site-title { font-size: 32px; }
-      .logo { height: 64px; }
+      .logo { height: 80px; }
     }
   </style>
 </head>
@@ -141,7 +141,7 @@
 
     <section class="section fade fade-delayed-2" aria-labelledby="mission">
       <h2 id="mission">Mission</h2>
-      <p><span class="brand-inline"><span class="pausitive">Pausitive</span><span class="force">Force</span><span class="tm">™</span></span> is a social impact organization redefining the Pause Spectrum™ — preparing women in their late 30s for perimenopause and supporting them through menopause and postmenopause — through advocacy, education, and technology. We unite and empower women so every stage of the pause is met with equity, innovation, and compassionate care.</p>
+      <p><span class="brand-inline"><span class="pausitive">Pausitive</span><span class="force">Force</span><span class="tm">™</span></span> is a social impact organization redefining the <span style="font-weight: bold;"> Pause Spectrum™ </span>— preparing women in their late 30s for perimenopause and supporting them through menopause and postmenopause — through advocacy, education, and technology. We unite and empower women so every stage of the pause is met with equity, innovation, and compassionate care.</p>
     </section>
 
     <section class="section fade fade-delayed-3" aria-labelledby="focus">

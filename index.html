@@ -50,11 +50,11 @@
     /* Header */
     header { padding: 8px 0 24px; }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .logo { height: 56px; width: auto; display: block; }
+    .logo { height: 80px; width: auto; display: block; }
 
     /* Hero */
     .hero { padding: 8px 0 12px; }
-    .hero h1 { margin: 12px 0 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 40px; line-height: 1.15; color: var(--brand-green); }
+    .hero h1 { margin: 12px 0 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 52px; line-height: 1.1; color: var(--brand-green); }
     .hero em { font-style: italic; font-weight: 500; }
     .subline { margin: 8px 0 0; font-family: "Montserrat", sans-serif; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--brand-green); }
 
@@ -77,11 +77,17 @@
     a { color: var(--brand-green); text-decoration: underline; text-underline-offset: 3px; }
     a:hover { color: #0e241a; }
 
+    /* Legal section adjustments */
+     section[aria-labelledby="legal"] p { font-size: 12px; color: var(--muted); }
+
+    a { color: var(--brand-green); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #0e241a; }
+
     @media (max-width: 860px) {
       .focus-list { grid-template-columns: 1fr; }
       .contact { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 32px; }
-      .logo { height: 48px; }
+      .hero h1 { font-size: 44px; }
+      .logo { height: 64px; }
     }
   </style>
 </head>
@@ -94,8 +100,7 @@
     </header>
 
     <section class="hero fade fade-delayed-1" aria-labelledby="title">
-      <h1 id="title"><span style="color: var(--brand-green)">Redefining the Pause.</span> <span style="color: var(--brand-orange)">Empowering the Future.</span></h1>
-      <p class="subline">Empower · Educate · Unite</p>
+      <h1 id="title">PausitiveForce™</h1>
     </section>
 
     <section class="section fade fade-delayed-2" aria-labelledby="vision">
@@ -129,7 +134,7 @@
     <section class="section fade fade-delayed-3" aria-labelledby="contact">
       <h2 id="contact">Contact Us</h2>
       <div class="contact">
-        <p>📧 <a href="mailto:info@pausitiveforce.org">info@pausitiveforce.org</a></p>
+        <p>📧 <a href="mailto:menoventure@gmail.com">menoventure@gmail.com</a></p>
         <p>📍 Seattle, Washington, USA</p>
       </div>
     </section>
@@ -142,7 +147,7 @@
     </section>
 
     <footer class="fade fade-delayed-3">
-      <p>© 2025 PausitiveForce™ | All Rights Reserved | <a href="mailto:contact@pausitiveforce.org">contact@pausitiveforce.org</a></p>
+      <p>© 2025 PausitiveForce™ | All Rights Reserved | <a href="mailto:menoventure@gmail.com">menoventure@gmail.com</a></p>
     </footer>
     <script>
     (function() {

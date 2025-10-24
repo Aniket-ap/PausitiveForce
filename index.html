@@ -52,6 +52,33 @@
     .brand { display: flex; align-items: center; gap: 12px; }
     .logo { height: 80px; width: auto; display: block; }
 
+    /* Site Title (brand name) */
+    /* Gazpacho webfont (provide files Gazpacho-Regular.woff2 and Gazpacho-Light.woff2) */
+    @font-face {
+      font-family: "Gazpacho";
+      src: local("Gazpacho Regular"), local("Gazpacho"), url("Gazpacho-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Gazpacho";
+      src: local("Gazpacho Light"), url("Gazpacho-Light.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    .site-title { margin: 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 44px; line-height: 1; }
+    .site-title .title-pausitive { color: var(--brand-green); font-weight: 600; }
+    .site-title .title-force { color: var(--brand-orange); font-weight: 300; }
+    .site-title .tm { font-family: "Montserrat", sans-serif; font-style: italic; font-weight: 500; font-size: .6em; color: var(--brand-green); margin-left: 2px; vertical-align: super; }
+    
+    /* Inline brand styling */
+    .brand-inline { white-space: nowrap; }
+    .brand-inline .pausitive { color: var(--brand-green); font-weight: 600; }
+    .brand-inline .force { color: var(--brand-orange); font-weight: 400; }
+    .brand-inline .tm { font-family: "Montserrat", sans-serif; font-style: italic; font-weight: 500; font-size: .85em; color: var(--brand-green); vertical-align: super; margin-left: 1px; }
+
     /* Hero */
     .hero { padding: 8px 0 12px; }
     .hero h1 { margin: 12px 0 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 52px; line-height: 1.1; color: var(--brand-green); }
@@ -86,7 +113,7 @@
     @media (max-width: 860px) {
       .focus-list { grid-template-columns: 1fr; }
       .contact { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 44px; }
+      .site-title { font-size: 32px; }
       .logo { height: 64px; }
     }
   </style>
@@ -96,11 +123,15 @@
     <header class="fade">
       <div class="brand">
         <img src="pausitiveforce-logo.png" alt="PausitiveForce logo" class="logo" />
+        
       </div>
     </header>
 
     <section class="hero fade fade-delayed-1" aria-labelledby="title">
-      <h1 id="title">PausitiveForce™</h1>
+      <!-- <h1 id="title">PausitiveForce™</h1> -->
+      <h1 class="site-title">
+          <span class="title-pausitive">Pausitive</span><span class="title-force">Force</span><span class="tm">™</span>
+        </h1>
     </section>
 
     <section class="section fade fade-delayed-2" aria-labelledby="vision">
@@ -110,7 +141,7 @@
 
     <section class="section fade fade-delayed-2" aria-labelledby="mission">
       <h2 id="mission">Mission</h2>
-      <p>PausitiveForce™ is a social impact organization redefining the Pause Spectrum™ — preparing women in their late 30s for perimenopause and supporting them through menopause and postmenopause — through advocacy, education, and technology. We unite and empower women so every stage of the pause is met with equity, innovation, and compassionate care.</p>
+      <p><span class="brand-inline"><span class="pausitive">Pausitive</span><span class="force">Force</span><span class="tm">™</span></span> is a social impact organization redefining the Pause Spectrum™ — preparing women in their late 30s for perimenopause and supporting them through menopause and postmenopause — through advocacy, education, and technology. We unite and empower women so every stage of the pause is met with equity, innovation, and compassionate care.</p>
     </section>
 
     <section class="section fade fade-delayed-3" aria-labelledby="focus">
@@ -142,12 +173,12 @@
     <section class="section fade fade-delayed-3" aria-labelledby="legal">
       <h2 id="legal">Legal & Transparency</h2>
       <!-- <p>PausitiveForce™ is a nonprofit organization incorporated in Washington State and recognized by the IRS as a 501(c)(3) charitable organization. Charitable registration details and our mission statement are available upon request.</p> -->
-      <p>PausitiveForce™ is a Washington nonprofit corporation exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code. All donations to PausitiveForce™ are tax-deductible in accordance with IRS regulations. Federal Identification Number (EIN): 39-4051049</p>
+      <p><span class="brand-inline"><span class="pausitive">Pausitive</span><span class="force">Force</span><span class="tm">™</span></span> is a Washington nonprofit corporation exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code. All donations to <span class="brand-inline"><span class="pausitive">Pausitive</span><span class="force">Force</span><span class="tm">™</span></span> are tax-deductible in accordance with IRS regulations. Federal Identification Number (EIN): 39-4051049</p>
       
     </section>
 
     <footer class="fade fade-delayed-3">
-      <p>© 2025 PausitiveForce™ | All Rights Reserved | <a href="mailto:menoventure@gmail.com">menoventure@gmail.com</a></p>
+      <p>© 2025 <span class="brand-inline"><span class="pausitive">Pausitive</span><span class="force">Force</span><span class="tm">™</span></span> | All Rights Reserved | <a href="mailto:menoventure@gmail.com">menoventure@gmail.com</a></p>
     </footer>
     <script>
     (function() {

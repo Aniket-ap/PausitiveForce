@@ -13,7 +13,7 @@
   <meta property="og:description" content="PausitiveForce™ is a Washington nonprofit redefining the Pause Spectrum through advocacy, education, and technology.">
   <meta property="og:image" content="pausitiveforce-logo.png">
   <meta property="og:type" content="website">
-  <!-- Brand fonts: Montserrat from Google; Gazpacho expected locally if available -->
+  <!-- Fonts: Montserrat for body/UI; Gazpacho (Regular/Light) for brand name -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -53,30 +53,30 @@
     .logo { height: 100px; width: auto; display: block; }
 
     /* Site Title (brand name) */
-    /* Gazpacho webfont (provide files Gazpacho-Regular.woff2 and Gazpacho-Light.woff2) */
+    /* Gazpacho webfonts from local TTFs */
     @font-face {
       font-family: "Gazpacho";
-      src: local("Gazpacho Regular"), local("Gazpacho"), url("Gazpacho-Regular.woff2") format("woff2");
+      src: local("Gazpacho Regular"), url("Gazpacho/Gazpacho Regular.ttf") format("truetype");
       font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
       font-family: "Gazpacho";
-      src: local("Gazpacho Light"), url("Gazpacho-Light.woff2") format("woff2");
+      src: local("Gazpacho Light"), url("Gazpacho/Gazpacho Light.ttf") format("truetype");
       font-weight: 300;
       font-style: normal;
       font-display: swap;
     }
-    .site-title { margin: 0; font-weight: 400; font-size: 44px; line-height: 1; }
-    .site-title .title-pausitive { color: var(--brand-green); font-weight: 600; }
+    .site-title { margin: 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 44px; line-height: 1; }
+    .site-title .title-pausitive { color: var(--brand-green); font-weight: 500; }
     .site-title .title-force { color: var(--brand-orange); font-weight: 300; }
     .site-title .tm { font-family: "Montserrat", sans-serif; font-style: normal; font-weight: 500; font-size: .6em; color: var(--brand-green); margin-left: 2px; vertical-align: super; }
     
     /* Inline brand styling */
-    .brand-inline { white-space: nowrap; }
-    .brand-inline .pausitive { color: var(--brand-green); font-weight: 600; }
-    .brand-inline .force { color: var(--brand-orange); font-weight: 400; }
+    .brand-inline { white-space: nowrap; font-family: "Gazpacho", serif; }
+    .brand-inline .pausitive { color: var(--brand-green); font-weight: 400; }
+    .brand-inline .force { color: var(--brand-orange); font-weight: 300; }
     .brand-inline .tm { font-family: "Montserrat", sans-serif; font-style: normal; font-weight: 500; font-size: .85em; color: var(--brand-green); vertical-align: super; margin-left: 1px; }
 
     /* Hero */
@@ -110,7 +110,9 @@
     a { color: var(--brand-green); text-decoration: underline; text-underline-offset: 3px; }
     a:hover { color: #0e241a; }
 
+    /* Responsive tweaks */
     @media (max-width: 860px) {
+      .brand { gap: 10px; }
       .focus-list { grid-template-columns: 1fr; }
       .contact { grid-template-columns: 1fr; }
       .site-title { font-size: 32px; }

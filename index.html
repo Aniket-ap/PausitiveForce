@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PausitiveForce™ — Redefining the Pause. Empowering the Future.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="PausitiveForce™ is a Washington nonprofit redefining the Pause Spectrum — preparing women in their late 30s for perimenopause and supporting them through menopause and postmenopause through advocacy, education, and technology.">
+  <meta name="theme-color" content="#1a3f2c">
+  <meta property="og:title" content="PausitiveForce™ — Redefining the Pause. Empowering the Future.">
+  <meta property="og:description" content="PausitiveForce™ is a Washington nonprofit redefining the Pause Spectrum through advocacy, education, and technology.">
+  <meta property="og:image" content="pausitiveforce-logo.png">
+  <meta property="og:type" content="website">
+  <!-- Brand fonts: Montserrat from Google; Gazpacho expected locally if available -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1b1f24;
+      --muted: #5b5f65;
+      --divider: #eaecef;
+      --brand-green: #1a3f2c; /* Pantone 19-5513 */
+      --brand-orange: #be582c; /* Pantone 7592 C */
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: "Montserrat", sans-serif; /* Body and UI */
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    html { scroll-behavior: smooth; }
+    .container { max-width: 980px; margin: 0 auto; padding: 10px 24px; }
+
+    /* Animation */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .fade { animation: fadeUp .6s ease-out both; }
+    .fade-delayed-1 { animation-delay: .08s; }
+    .fade-delayed-2 { animation-delay: .16s; }
+    .fade-delayed-3 { animation-delay: .24s; }
+    @media (prefers-reduced-motion: reduce) { .fade, .fade-delayed-1, .fade-delayed-2, .fade-delayed-3 { animation: none; } }
+
+    /* Header */
+    header { padding: 8px 0 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo { height: 56px; width: auto; display: block; }
+
+    /* Hero */
+    .hero { padding: 8px 0 12px; }
+    .hero h1 { margin: 12px 0 0; font-family: "Gazpacho", serif; font-weight: 400; font-size: 40px; line-height: 1.15; color: var(--brand-green); }
+    .hero em { font-style: italic; font-weight: 500; }
+    .tagline { margin: 8px 0 0; font-family: "Montserrat", sans-serif; font-style: italic; font-weight: 500; color: var(--brand-green); }
+
+    /* Sections: minimal with dividers */
+    .section { margin: 24px 0 0; padding-top: 20px; border-top: 1px solid var(--divider); }
+    .section h2 { margin: 0 0 10px; font-family: "Gazpacho", serif; font-weight: 300; font-size: 22px; color: var(--brand-green); }
+    .section p { margin: 0; line-height: 1.65; }
+
+    /* Focus: simple list */
+    .focus-list { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+    .focus-item h3 { margin: 0 0 6px; font-family: "Gazpacho", serif; font-weight: 300; font-size: 20px; color: var(--brand-orange); }
+    .focus-item p { margin: 0; }
+
+    /* Contact */
+    .contact { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+
+    /* Footer */
+    footer { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--divider); font-size: 13px; color: var(--muted); }
+
+    a { color: var(--brand-green); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #0e241a; }
+
+    @media (max-width: 860px) {
+      .focus-list { grid-template-columns: 1fr; }
+      .contact { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 32px; }
+      .logo { height: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" aria-label="PausitiveForce Content">
+    <header class="fade">
+      <div class="brand">
+        <img src="pausitiveforce-logo.png" alt="PausitiveForce logo" class="logo" />
+      </div>
+    </header>
+
+    <section class="hero fade fade-delayed-1" aria-labelledby="title">
+      <h1 id="title"><span style="color: var(--brand-green)">Redefining the Pause.</span> <span style="color: var(--brand-orange)">Empowering the Future.</span></h1>
+      <p class="tagline">Redefining the Pause. Empowering the Future.</p>
+    </section>
+
+    <section class="section fade fade-delayed-2" aria-labelledby="vision">
+      <h2 id="vision">Vision</h2>
+      <p>From Pause to Power: leading a global movement where every stage of menopause is supported, celebrated, and redefined as a source of strength, equity, and change.</p>
+    </section>
+
+    <section class="section fade fade-delayed-2" aria-labelledby="mission">
+      <h2 id="mission">Mission</h2>
+      <p>PausitiveForce™ is a social impact organization redefining the Pause Spectrum™ — preparing women in their late 30s for perimenopause and supporting them through menopause and postmenopause — through advocacy, education, and technology. We unite and empower women so every stage of the pause is met with equity, innovation, and compassionate care.</p>
+    </section>
+
+    <section class="section fade fade-delayed-3" aria-labelledby="focus">
+      <h2 id="focus">Our Focus</h2>
+      <div class="focus-list">
+        <div class="focus-item" aria-label="Empower">
+          <h3>Empower</h3>
+          <p>Build AI-enabled tools and personalized guidance that help women navigate every stage of menopause with confidence.</p>
+        </div>
+        <div class="focus-item" aria-label="Educate">
+          <h3>Educate</h3>
+          <p>Provide evidence-based resources and expert-curated learning to close gaps in understanding of midlife health.</p>
+        </div>
+        <div class="focus-item" aria-label="Unite">
+          <h3>Unite</h3>
+          <p>Convene leaders, nonprofits, and innovators to collaborate on equitable menopause care globally.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade fade-delayed-3" aria-labelledby="contact">
+      <h2 id="contact">Contact Us</h2>
+      <div class="contact">
+        <p>📧 <a href="mailto:info@pausitiveforce.org">info@pausitiveforce.org</a></p>
+        <p>📍 Seattle, Washington, USA</p>
+      </div>
+    </section>
+
+    <section class="section fade fade-delayed-3" aria-labelledby="legal">
+      <h2 id="legal">Legal & Transparency</h2>
+      <p>PausitiveForce™ is a nonprofit organization incorporated in Washington State and recognized by the IRS as a 501(c)(3) charitable organization. Charitable registration details and our mission statement are available upon request.</p>
+    </section>
+
+    <footer class="fade fade-delayed-3">
+      <p>PausitiveForce is a Washington nonprofit corporation exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code. All donations to PausitiveForce are tax-deductible in accordance with IRS regulations. Federal Identification Number (EIN): 39-4051049</p>
+      <p>© 2025 PausitiveForce™ | All Rights Reserved | <a href="mailto:contact@pausitiveforce.org">contact@pausitiveforce.org</a></p>
+    </footer>
+    <script>
+    (function() {
+      const items = document.querySelectorAll('.hero, .section, .focus-item, footer, header');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -10% 0px' });
+    
+      items.forEach((el) => {
+        el.classList.add('reveal');
+        observer.observe(el);
+      });
+    })();
+    </script>
+  </main>
+</body>
+</html>
